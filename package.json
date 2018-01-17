@@ -1,0 +1,16 @@
+{
+  "name": "gestfop",
+  "version": "1.0.0",
+  "description": "Aplicação CRM para FOP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
+  "author": "Ricardo Sacramento",
+  "license": "ISC"
+}
