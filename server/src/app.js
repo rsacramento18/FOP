@@ -3,8 +3,11 @@ const express = require('express');
 const logger = require('morgan');
 
 const app = express();
+app.use(logger('dev'));
+
 
 const associates = require('./associates');
+
 
 app.use('/associates', associates);
 
