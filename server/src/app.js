@@ -1,43 +1,12 @@
 
 const express = require('express');
-const mysql = require('mysql');
+const logger = require('morgan');
 
 const app = express();
 
-const QUERY_SOCIOS = 'SELECT * FROM SOCIOS';
+const associates = require('./associates');
 
-//Create connection
-const db = mysql.createConnection({
-    host : 'fop.com.pt',
-    user : 'rsacramento',
-    password : 'Sacramento1991',
-    database : 'fop_aplicacao'
-});
-
-//Connect
-
-db.connect((err) =>{
-    if(err){
-       throw err;
-    }
-    console.log('Mysql Connected');
-});
-
-app.get('/', (req, res) => {
-    console.log('go to /products')
-});
-app.get('/products', (req, res) => {
-    db.query(QUERY_SOCIOS, (err, results) =>{
-        if(err){
-            return res.send(err);
-        }
-        else{
-            return res.json({
-                data: results
-            })
-        }
-    });
-});
+app.use('/associates', associates);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
