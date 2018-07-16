@@ -18,8 +18,10 @@ router.get('/all', (req, res) => {
 })
 
 // Get single associate
-router.get('/single/:id', (req, res) => {
-  let sql = `SELECT * FROM socios WHERE stam = ${req.params.id}`
+router.get('/single', (req, res) => {
+  var stam = req.param('id')
+  var clube = req.param('club')
+  let sql = `SELECT * FROM socios INNER JOIN socios_clubes ON socios.stam=socios_clubes.stam WHERE socios.stam = ${stam} AND clube = ${clube}`
   db.query(sql, (err, results) => {
     if (err) {
       return res.send(err)
