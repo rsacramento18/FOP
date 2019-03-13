@@ -27,13 +27,14 @@ router.get('/all/fop', (req, res) => {
 })
 
 // Get single associate
-// - - - - - Required id(stam) but not club(clube)
+// - - - - - Required id(stam)
+// - - - - - Not Required club(clube)
 router.get('/single', (req, res) => {
   let stam = req.param('id')
   let clube = req.param('club')
   let sql= ""
 
-  if(clube !== undefined) {
+  if(club !== undefined) {
      sql = `SELECT * FROM socios INNER JOIN socios_clubes ON socios.stam=socios_clubes.stam WHERE socios.stam = ${stam} AND clube = ${clube}`
   }
   else{
@@ -51,6 +52,7 @@ router.get('/single', (req, res) => {
   })
 })
 
+// Get all associates from fonp
 router.get('/all/fonp', (req, res) => {
   sql= `SELECT * FROM contasociofonp`
 
@@ -66,6 +68,7 @@ router.get('/all/fonp', (req, res) => {
 })
 
 
+// Get all associates from international
 router.get('/all/international', (req, res) => {
   sql= `SELECT * FROM contasestrangeiro`
 
