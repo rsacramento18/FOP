@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MainAreaComponent } from './main-area/main-area.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainAreaComponent } from './main-area/main-area.component';
     SideMenuComponent,
     MainAreaComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MainAreaComponent } from './main-area/main-area.component';
 
+import { LoginComponent} from './login/login.component';
+
 // update the route array with these
 const routes: Routes = [
   {path: 'header', component: HeaderComponent },
