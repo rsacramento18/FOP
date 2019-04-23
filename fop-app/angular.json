@@ -27,6 +27,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/normalize.css/normalize.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/variables.scss",
               "src/styles.scss"
             ],
             "scripts": [],

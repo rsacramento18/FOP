@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+body {
+  font-family: $font-stack;
+  font-size: 1em;
+  backgroung-color: $bg-primary-color;
+}
