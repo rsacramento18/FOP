@@ -1,9 +1,18 @@
 {
-  "nav.federacao": "Federação",
-  "nav.clubes": "Clubes",
-  "nav.exposições": "Exposições",
+  "federation.documentation": "Documentação",
+  "federation.legislation": "Legislação",
+  "federation.objectives": "Principais Objectivos",
+  "federation.statutes": "Estatutos",
+  "federation.social": "Órgãos Sociais",
+  "home.title": "Federação Ornitológica Portuguesa Cultural e Desportiva",
+  "legislation.title": "Legislação",
+  "login.sign": "Entrar",
+  "nav.federation": "Federação",
+  "nav.clubs": "Clubes",
+  "nav.expositions": "Exposições",
   "nav.gestfop": "Gestfop",
-  "nav.criadores": "Criadores",
+  "nav.breeders": "Criadores",
   "nav.ctj": "ctj-fop",
-  "nav.contactos": "Contactos"
+  "nav.contacts": "Contactos",
+  "objectives.title": "Principais objectivos a que se propõe a Direção"
 }

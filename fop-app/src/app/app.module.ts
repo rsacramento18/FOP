@@ -19,6 +19,11 @@ import { GestfopComponent } from './gestfop/gestfop.component';
 import { CriadoresComponent } from './criadores/criadores.component';
 import { CtjComponent } from './ctj/ctj.component';
 import { ContactosComponent } from './contactos/contactos.component';
+import { LegislacaoComponent } from './legislacao/legislacao.component';
+import { DocumentacaoComponent } from './documentacao/documentacao.component';
+import { ObjectivosComponent } from './objectivos/objectivos.component';
+import { EstatutosComponent } from './estatutos/estatutos.component';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { ContactosComponent } from './contactos/contactos.component';
     GestfopComponent,
     CriadoresComponent,
     CtjComponent,
-    ContactosComponent
+    ContactosComponent,
+    LegislacaoComponent,
+    DocumentacaoComponent,
+    ObjectivosComponent,
+    EstatutosComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
