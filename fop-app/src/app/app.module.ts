@@ -24,6 +24,7 @@ import { DocumentacaoComponent } from './documentacao/documentacao.component';
 import { ObjectivosComponent } from './objectivos/objectivos.component';
 import { EstatutosComponent } from './estatutos/estatutos.component';
 import { SocialComponent } from './social/social.component';
+import { OrgaoComponent } from './orgao/orgao.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SocialComponent } from './social/social.component';
     DocumentacaoComponent,
     ObjectivosComponent,
     EstatutosComponent,
-    SocialComponent
+    SocialComponent,
+    OrgaoComponent
   ],
   imports: [
     BrowserModule,

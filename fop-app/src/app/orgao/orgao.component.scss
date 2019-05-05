@@ -1,0 +1,29 @@
+@import '../../styles.scss';
+
+.no-right-margin {
+    margin-right: 0;
+}
+
+.photo {
+    text-align: right;
+}
+
+.photo img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+}
+
+.photo-small img {
+   height: 5rem; 
+   width: 5rem;
+   border-radius: 100%;
+}
+
+.roles {
+    text-align: right
+}
+
+.data {
+    margin: 1.5rem 0;
+}
