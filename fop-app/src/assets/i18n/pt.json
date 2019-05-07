@@ -1,4 +1,5 @@
 {
+  "documentation.title": "Documentação FOP",
   "federation.documentation": "Documentação",
   "federation.legislation": "Legislação",
   "federation.objectives": "Principais Objectivos",
@@ -21,5 +22,10 @@
   "social.juridicial": "Conselho Jurisdicional",
   "social.disciplinar": "Conselho Disciplinar",
   "social.tecnic": "Conselho Técnico (Colégio de Juízes)",
+  "statures.title": "Estatutos e Regulamentos",
+  "statures.link.fop": "Estatutos da FOP",
+  "statures.link.intern": "Regulamento Interno do FOP",
+  "statures.link.sport": "Regulamento Desportivo da FOP",
+  "statures.link.disciplinar": "Regulamento Disciplinar da FOP",
   "objectives.title": "Principais objectivos a que se propõe a Direção"
 }

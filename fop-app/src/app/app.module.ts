@@ -8,6 +8,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -51,6 +52,7 @@ import { OrgaoComponent } from './orgao/orgao.component';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    AngularFontAwesomeModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

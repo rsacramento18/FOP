@@ -1,0 +1,23 @@
+@import '../../styles.scss';
+
+.statures ul {
+    display: block;
+    list-style: none;
+}
+
+.statures ul li {
+    margin: 2rem 0;
+}
+
+.statures ul li a {
+    text-decoration: none;
+    color: $black;
+}
+
+.statures ul li a:hover {
+    font-weight: 600;
+}
+
+.right-margin {
+    margin-right: 1rem;
+}
