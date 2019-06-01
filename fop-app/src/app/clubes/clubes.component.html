@@ -1,3 +1,23 @@
-<p>
-  clubes works!
-</p>
+<div class="container top-margin">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="h3" translate>clubs.title</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-1 club" *ngFor="let club of clubs.data">
+          <button class="clubBt" (click)="showClub(club)">{{club.sigla}}</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="row" *ngIf="showClub">
+        <div class="col-lg-12">
+          <app-club [club]="selectedClub"></app-club>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

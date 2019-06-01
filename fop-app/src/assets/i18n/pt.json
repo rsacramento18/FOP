@@ -1,5 +1,10 @@
 {
+  "clubs.title": "Clubes",
   "documentation.title": "Documentação FOP",
+  "documentation.date": "Data",
+  "documentation.title.title": "Título",
+  "documentation.description": "Descrição",
+  "documentation.file": "Ficheiro",
   "federation.documentation": "Documentação",
   "federation.legislation": "Legislação",
   "federation.objectives": "Principais Objectivos",

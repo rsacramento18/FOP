@@ -1,0 +1,41 @@
+@import '../../styles.scss';
+
+:host {
+    flex: 1;
+}
+
+.top-margin {
+    margin-top: 2rem;
+}
+
+.club {
+    text-align: center;
+    margin: 1rem;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    padding: 0;
+
+}
+
+.club .clubBt{
+    width:100%;
+    background-color: $white;
+    color: $black;
+    display: block;
+    margin: 0.25rem 0rem;
+    padding: 0 0rem;   
+    border: none;
+
+}
+
+
+.club .clubBt:hover {
+    background-color: $light-orange;
+    color: $white;
+}
+
+.club .clubBt:focus{
+    background-color: $light-orange;
+    color: $white;
+    outline: none;
+}

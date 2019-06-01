@@ -1,18 +1,18 @@
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class="h3" translate>social.title</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div [ngClass]="{'col-lg-12':orgao.section==1,  'col-lg-6':orgao.section==2, 'col-lg-3':orgao.section==3, 'col-12':orgao.section==4}"  *ngFor="let orgao of orgaos ; let i = index" [attr.data-index]="i">
+<div class="row">
+  <div class="col-lg-12">
+    <h3 class="h3" translate>social.title</h3>
+  </div>
+</div>
+<div class="row">
+  <div [ngClass]="{'col-lg-12':orgao.section==1,  'col-lg-6':orgao.section==2, 'col-lg-3':orgao.section==3, 'col-12':orgao.section==4}"  *ngFor="let orgao of orgaos ; let i = index" [attr.data-index]="i">
 
-        <h4 class="h4 title-social" *ngIf="i==0" translate>social.direction</h4>
-        <h4 class="h4 title-social" *ngIf="i==7" translate>social.assembly</h4>
-        <h4 class="h4 title-social" *ngIf="i==10" translate>social.fiscal</h4>
-        <h4 class="h4 title-social" *ngIf="i==13" translate>social.juridicial</h4>
-        <h4 class="h4 title-social" *ngIf="i==16" translate>social.disciplinar</h4>
-        <h4 class="h4 title-social" *ngIf="i==19" translate>social.tecnic</h4>
+    <h4 class="h4 title-social" *ngIf="i==0" translate>social.direction</h4>
+    <h4 class="h4 title-social" *ngIf="i==7" translate>social.assembly</h4>
+    <h4 class="h4 title-social" *ngIf="i==10" translate>social.fiscal</h4>
+    <h4 class="h4 title-social" *ngIf="i==13" translate>social.juridicial</h4>
+    <h4 class="h4 title-social" *ngIf="i==16" translate>social.disciplinar</h4>
+    <h4 class="h4 title-social" *ngIf="i==19" translate>social.tecnic</h4>
 
-        <app-orgao [orgao]='orgao'></app-orgao>
-      </div>
-    </div>
+    <app-orgao [orgao]="orgao"></app-orgao>
+  </div>
+</div>

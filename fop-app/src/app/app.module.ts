@@ -26,6 +26,7 @@ import { ObjectivosComponent } from './objectivos/objectivos.component';
 import { EstatutosComponent } from './estatutos/estatutos.component';
 import { SocialComponent } from './social/social.component';
 import { OrgaoComponent } from './orgao/orgao.component';
+import { ClubComponent } from './club/club.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { OrgaoComponent } from './orgao/orgao.component';
     ObjectivosComponent,
     EstatutosComponent,
     SocialComponent,
-    OrgaoComponent
+    OrgaoComponent,
+    ClubComponent
   ],
   imports: [
     BrowserModule,
