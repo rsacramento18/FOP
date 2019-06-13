@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+:host {
+    background-color: $light-green;
+    color: $black;
+    margin-top: 2rem;
+}
+
+.copyright-design {
+    text-align: center;
+}
+
+.margin-footer {
+    margin: 5rem 0.25rem;
+}

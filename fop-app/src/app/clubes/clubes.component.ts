@@ -9,18 +9,23 @@ import { ClubService } from '../services/club.service';
   styleUrls: ['./clubes.component.scss']
 })
 export class ClubesComponent implements OnInit {
-  private clubs: Club[] = [];
+  private allClubs: Club[] = [];
   private currentClub: Club;
-  private showClub = false;
+  private isClubHover = false;
 
   constructor(private clubService: ClubService) {
     this.clubService.getListClub().subscribe((res: Club[]) => {
-      this.clubs = res;
-      console.log(this.clubs)
+      this.allClubs = res;
+      this.currentClub = this.allClubs[0];
     })
    }
 
   ngOnInit() {
   }
+
+  showClub(club: Club) {
+    this.currentClub = club;
+  }
+  
 
 }

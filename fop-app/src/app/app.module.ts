@@ -13,6 +13,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { FopTitleComponent } from './foptitle/foptitle.component';
 import { FederacaoComponent } from './federacao/federacao.component';
 import { ClubesComponent } from './clubes/clubes.component';
 import { ExposicoesComponent } from './exposicoes/exposicoes.component';
@@ -34,6 +35,7 @@ import { ClubComponent } from './club/club.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
+    FopTitleComponent,
     FederacaoComponent,
     ClubesComponent,
     ExposicoesComponent,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { FopTitleComponent } from './foptitle/foptitle.component';
 import { HomeComponent } from './home/home.component';
 import { FederacaoComponent } from './federacao/federacao.component';
 import { ClubesComponent } from './clubes/clubes.component';
@@ -16,7 +17,7 @@ import { EstatutosComponent } from './estatutos/estatutos.component';
 import { SocialComponent } from './social/social.component';
 
 const routes: Routes = [
-  { path: '', component: FederacaoComponent},
+  { path: '', component: HomeComponent},
   { path: 'federacao', component: FederacaoComponent,
     children: [
       { path: 'documentacao', component: DocumentacaoComponent },

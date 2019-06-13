@@ -8,7 +8,7 @@ const db = require('./db')
 //   response.send(request.body);
 // })
 
-router.get('/all/fop/:club', (req, res) => {
+router.get('/all/fop/:club?', (req, res) => {
   let clube = req.params.club
   let sql= ""
 
@@ -23,33 +23,23 @@ router.get('/all/fop/:club', (req, res) => {
     if (err) {
       return res.send(err)
     } else {
-      return res.json({
-        data: results
-      })
+      return res.json(results)
     }
   })
 })
 
 
-router.get('/single/:id/:club', function(req, res) {
+router.get('/single/:id', function(req, res) {
   let stam = req.params.id
-  let clube = req.params.club
   let sql= ""
 
-  if(clube !== undefined) {
-     sql = `SELECT * FROM socios INNER JOIN socios_clubes ON socios.stam=socios_clubes.stam WHERE socios.stam = '${stam}' AND clube = '${clube}'`
-  }
-  else{
-     sql = `SELECT * FROM socios WHERE socios.stam = ${stam}`
-  }
+  sql = `SELECT * FROM socios INNER JOIN socios_clubes ON socios.stam=socios_clubes.stam WHERE socios.stam = '${stam}'`
 
   db.query(sql, (err, results) => {
     if (err) {
       return res.send(err)
     } else {
-      return res.json({
-        data: results
-      })
+      return res.json(results)
     }
   })
 })
@@ -61,9 +51,7 @@ router.get('/all/fonp', (req, res) => {
     if (err) {
       return res.send(err)
     } else {
-      return res.json({
-        data: results
-      })
+      return res.json(results)
     }
   })
 })
@@ -75,9 +63,7 @@ router.get('/all/international', (req, res) => {
     if (err) {
       return res.send(err)
     } else {
-      return res.json({
-        data: results
-      })
+      return res.json(results)
     }
   })
 })

@@ -4,38 +4,45 @@
     flex: 1;
 }
 
-.top-margin {
-    margin-top: 2rem;
+.clubSelection {
+    border-bottom: 4px double $light-green;
+    margin: 2rem 0;
+
 }
 
 .club {
-    text-align: center;
-    margin: 1rem;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
-    padding: 0;
-
+    margin: 1rem 0;
+    height: 3rem;
+    cursor: pointer;
+}
+.club img {
+    height: 3rem;
 }
 
-.club .clubBt{
-    width:100%;
-    background-color: $white;
-    color: $black;
+.clubHover {
+    display: none;
+}
+
+.club:hover > .clubHover {
     display: block;
-    margin: 0.25rem 0rem;
-    padding: 0 0rem;   
-    border: none;
-
 }
 
 
-.club .clubBt:hover {
-    background-color: $light-orange;
-    color: $white;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.club .clubBt:focus{
-    background-color: $light-orange;
-    color: $white;
-    outline: none;
+::-webkit-scrollbar-track {
+  background-color: $black;
+  border-left: 2px solid $white;
+  border-right: 2px solid $white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $black;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $bg-primary-color;
 }
