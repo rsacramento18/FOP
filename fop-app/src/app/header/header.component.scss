@@ -17,12 +17,12 @@
 .logo img {
     height: 4.5rem;
     margin: 0.25rem;
-    float: right;
 }
 
 .menu{
     background-color: $bg-primary-color;
     margin: 0 auto;
+    display: inline-block;
 }
 
 .menu ul {
